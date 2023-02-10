@@ -1,0 +1,447 @@
+:root {
+    --main-color: #0078ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.head::before {
+    content: '';
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    background-color: #0078ff;
+    transform: translate(-50%);
+}
+
+.head .h2 {
+    font-size: 35px;
+}
+
+nav .collapse ul li::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 8px;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+nav .collapse ul .Home::before {
+
+    width: 65%;
+}
+
+nav .collapse ul li:hover::before {
+    width: 65%;
+}
+
+.back-header {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -99;
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: absolute;
+
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+header h1::before {
+    content: ' |';
+    width: 50%;
+    left: 50%;
+    top: 106%;
+    position: absolute;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translatex(-50%);
+    font-size: 35px;
+}
+
+@keyframes text {
+    0% {
+        content: ' |';
+    }
+
+    2% {
+        content: '  D|';
+    }
+
+    4% {
+        content: ' Ds|';
+    }
+
+    6% {
+        content: ' Dsi|';
+    }
+
+    8% {
+        content: ' Dsig|';
+    }
+
+    10% {
+        content: ' Design|';
+    }
+
+    12% {
+        content: ' Designe|';
+    }
+
+    14% {
+        content: ' Designer|';
+    }
+
+    16% {
+        content: ' Designer|';
+    }
+
+    34% {
+        content: ' Designe|';
+    }
+
+    36% {
+        content: ' Design|';
+    }
+
+    38% {
+        content: ' Desig|';
+    }
+
+    40% {
+        content: ' Desi|';
+    }
+
+    42% {
+        content: ' Des|';
+    }
+
+    44% {
+        content: ' De|';
+    }
+
+    46% {
+        content: ' Dev|';
+    }
+
+    48% {
+        content: ' Deve|';
+    }
+
+    50% {
+        content: ' Devel|';
+    }
+
+    52% {
+        content: ' Develo|';
+    }
+
+    54% {
+        content: ' Develop|';
+    }
+
+    56% {
+        content: ' Develope|';
+    }
+
+    58% {
+        content: ' Developer|';
+    }
+
+    76% {
+        content: ' Developer|';
+    }
+
+    78% {
+        content: ' Develope|';
+    }
+
+    80% {
+        content: ' Develop|';
+    }
+
+    82% {
+        content: ' Develo|';
+    }
+
+    84% {
+        content: ' Devel|';
+    }
+
+    86% {
+        content: ' Deve|';
+    }
+
+    88% {
+        content: ' Dev|';
+    }
+
+    90% {
+        content: ' De|';
+    }
+
+    92% {
+        content: ' D|';
+    }
+
+    100% {
+        content: ' |';
+    }
+}
+
+@media screen and(max-width:992px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h1::before {
+        font-size: 16px;
+    }
+}
+
+.about .skills .persent {
+    height: 11.5px;
+    background-color: #cde1fb;
+}
+
+.about .skills .persent span {
+    background-color: var(--main-color);
+}
+
+.skills .persent .first {
+    width: 80%;
+}
+
+.about .skills .persent .last {
+    width: 90%;
+
+}
+
+.about .paragraph h5::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+
+}
+
+.services .icon {
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.services .perant .box:hover .icon {
+    background-color: var(--main-color);
+    color: #fff;
+    border-color: #bbd9f8;
+}
+
+.country {
+    background-image: url(../images/blog/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+.overly {
+    height: 400px;
+}
+
+.overly::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0078ff;
+    opacity: 0.7;
+
+}
+
+.overly .icon {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #bbd9f8;
+}
+
+@media screen and (max-width:767px) {
+    .overly {
+        height: auto;
+    }
+}
+
+.porfolio .content-portfolio .box .content-box .image {
+    overflow: hidden;
+
+}
+
+.porfolio .content-portfolio .box .content-box img {
+    transition: 0.5s;
+
+}
+
+.porfolio .content-portfolio .box .content-box:hover img {
+    transform: translate3d(0, 0, 20px) rotate(3deg) scale(1.1);
+}
+
+.porfolio .content-portfolio .box {
+    perspective-origin: 300px;
+}
+
+.porfolio .content-portfolio .box .content-box {
+    overflow: hidden;
+
+}
+
+.porfolio .content-portfolio .box .icon {
+    width: 40px;
+    height: 40px;
+    color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+
+.porfolio .content-portfolio .box .date span {
+    color: var(--main-color);
+}
+
+.testimonial {
+    background-color: #0077ffab;
+
+}
+
+.testimonial .carousel-item .box .image {
+    width: 150px;
+    height: 150px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 12px !important;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.blog .content .content-box {
+    box-shadow: 0px 1px 7px #c2cbd7;
+}
+
+.blog .content .content-box .button {
+    background-color: var(--main-color);
+    width: fit-content;
+    transform: translateY(-50%);
+}
+
+.blog .content .content-box .footer {
+    background-color: #00000008;
+}
+
+.blog .content .content-box .footer img {
+    width: 30px;
+}
+
+.blog .content .content-box .footer:hover .info span {
+    transition: 0.5s;
+}
+
+.blog .content .content-box .footer:hover .info span {
+    color: var(--main-color);
+}
+
+.informat {
+    background-color: #0077ffab
+}
+
+.informat h2::before {
+    content: '';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+}
+
+.informat .send input,
+textarea,
+button {
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+.informat .send button {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.5s;
+}
+
+.informat .send textarea {
+    height: 100px;
+}
+
+
+.informat .send button:hover {
+    background-color: #3292ff;
+    border: 1px solid #bbd9f8;
+}
+
+.informat .get {
+    color: #4e4e4e;
+}
+
+.informat .get .brand {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #0062d3;
+}
